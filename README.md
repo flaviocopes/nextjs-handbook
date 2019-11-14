@@ -10,7 +10,7 @@ Working on a modern JavaScript application powered by React is awesome until you
 
 First, the page takes longer to the become visible to the user, because before the content loads, all the JavaScript must load, and your application needs to run to determine what to show on the page.
 
-Second, if you are building a publicly available website, you have a content SEO issue. Search engines are getting better at running and indexing JavaScript apps, but it's much better if we can send them content instead of letting them figure it out.
+Second, if you are building a publicly available website, you have a content SEO issue. Search engines are getting better%20at%20running and indexing JavaScript apps, but it's much better if we can send them content instead of letting them figure it out.
 
 The solution to both of those problems is **server rendering**, also called **static pre-rendering**.
 
@@ -54,7 +54,7 @@ If only one of your pages imports the Axios library, for example, that specific 
 
 This ensures your first page load is as fast as it can be, and only future page loads (if they will ever be triggered) will send the JavaScript needed to the client.
 
-There is one notable exception. Frequently used imports are moved into the main JavaScript bundle if they are used in at least half of the site pages.
+There is one notable exception. Frequently used imports are moved into the main JavaScript bundle if they are used in%20at%20least half of the site pages.
 
 ### Prefetching
 
@@ -102,7 +102,7 @@ Make sure that you have the latest version of Node. Check with running `node -v`
 
 After you install Node.js, you will have the `npm` command available into your command line.
 
-If you have any trouble at this stage, I recommend the following tutorials I wrote for you:
+If you have any trouble%20at%20this stage, I recommend the following tutorials I wrote for you:
 
 - [how to install Node.js](https://flaviocopes.com/node-installation/) 
 - [how to update Node.js](https://flaviocopes.com/how-to-update-node/) 
@@ -119,7 +119,7 @@ We can choose 2 routes now: using `create-next-app` or the classic approach whic
 
 If you're familiar with [`create-react-app`](https://flaviocopes.com/react-create-react-app/), `create-next-app` is the same thing - except it creates a Next app instead of a React app, as the name implies.
 
-I assume you installed Node.js already, which from version 5.2 (2+ years ago at the time of writing) comes with the [`npx` command](https://flaviocopes.com/npx/) bundled. This handy tool lets us download and execute a JavaScript command, and we'll use it like this:
+I assume you installed Node.js already, which from version 5.2 (2+ years ago%20at%20the time of writing) comes with the [`npx` command](https://flaviocopes.com/npx/) bundled. This handy tool lets us download and execute a JavaScript command, and we'll use it like this:
 
 ```bash
 npx create-next-app
@@ -127,17 +127,17 @@ npx create-next-app
 
 The command asks the application name (and creates a new folder for you with that name), then downloads all the packages it needs (`react`, `react-dom`, `next`), sets the `package.json` to:
 
-![](Screen Shot 2019-11-14 at 16.46.47.png(
+![](./Screen%20Shot%202019-11-14%20at%2016.46.47.png)
 
 and you can immediately run the sample app by running `npm run dev`:
 
-![](Screen Shot 2019-11-14 at 16.46.32.png)
+![](Screen%20Shot%202019-11-14%20at%2016.46.32.png)
 
 And here's the result on http://localhost:3000:
 
-![](Screen Shot 2019-11-14 at 16.47.17.png)
+![](Screen%20Shot%202019-11-14%20at%2016.47.17.png)
 
-This is the recommended way to start a Next.js application, as it gives you structure and sample code to play with. And there's more than just that default sample application: you can use any of the examples stored at <https://github.com/zeit/next.js/tree/canary/examples> using the `--example` option, for example try:
+This is the recommended way to start a Next.js application, as it gives you structure and sample code to play with. And there's more than just that default sample application: you can use any of the examples stored%20at%20<https://github.com/zeit/next.js/tree/canary/examples> using the `--example` option, for example try:
 
 ```bash
 npx create-next-app --example blog-starter
@@ -145,7 +145,7 @@ npx create-next-app --example blog-starter
 
 Which gives you an immediately usable blog instance with syntax highlighting too:
 
-![](Screen Shot 2019-11-14 at 17.13.29.png)
+![](Screen%20Shot%202019-11-14%20at%2017.13.29.png)
 
 ### Manually create a Next.js app
 
@@ -171,7 +171,7 @@ npm init -y
 
 The `-y` option tells `npm` to use the default settings for a project, populating a sample `package.json` file.
 
-![](Screen Shot 2019-11-04 at 16.59.21.png)
+![](Screen%20Shot%202019-11-04%20at%2016.59.21.png)
 
 Now install Next and React:
 
@@ -224,7 +224,7 @@ to add the Next.js build commands, which we're going to use soon.
 
 > Tip: use `"dev": "next -p 3001",` to change the port and run, in this example, on port 3001 
 
-![](Screen Shot 2019-11-04 at 17.01.03.png)
+![](Screen%20Shot%202019-11-04%20at%2017.01.03.png)
 
 Now create a `pages` folder, and add an `index.js` file.
 
@@ -246,11 +246,11 @@ Now using the terminal, run `npm run dev` to start the Next development server.
 
 This will make the app available on port 3000, on localhost.
 
-![](Screen Shot 2019-11-04 at 11.24.02.png)
+![](Screen%20Shot%202019-11-04%20at%2011.24.02.png)
 
 Open <http://localhost:3000> in your browser to see it.
 
-![](Screen Shot 2019-11-04 at 11.24.23.png)
+![](Screen%20Shot%202019-11-04%20at%2011.24.23.png)
 
 ## View source to confirm SSR is working
 
@@ -267,7 +267,7 @@ This has 3 major benefits:
 Let's view the source of the app.
 Using Chrome you can right-click anywhere in the page, and press **View Page Source**.
 
-[image:B8728E75-E35D-4C60-91BF-A78BF2D6D561-79583-00063A620E6E5C94/Screen Shot 2019-11-04 at 11.33.10.png]
+![](Screen%20Shot%202019-11-04%20at%2011.33.10.png)
 
 If you view the source of the page, you'll see the `<div><h1>Airbnb clone</h1></div>` snippet in the HTML `body`, along with a bunch of JavaScript files - the app bundles.
 

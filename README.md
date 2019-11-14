@@ -37,7 +37,7 @@ Working on a modern JavaScript application powered by React is awesome until you
 
 First, the page takes longer to the become visible to the user, because before the content loads, all the JavaScript must load, and your application needs to run to determine what to show on the page.
 
-Second, if you are building a publicly available website, you have a content SEO issue. Search engines are getting better%20at%20running and indexing JavaScript apps, but it's much better if we can send them content instead of letting them figure it out.
+Second, if you are building a publicly available website, you have a content SEO issue. Search engines are getting better at running and indexing JavaScript apps, but it's much better if we can send them content instead of letting them figure it out.
 
 The solution to both of those problems is **server rendering**, also called **static pre-rendering**.
 
@@ -81,7 +81,7 @@ If only one of your pages imports the Axios library, for example, that specific 
 
 This ensures your first page load is as fast as it can be, and only future page loads (if they will ever be triggered) will send the JavaScript needed to the client.
 
-There is one notable exception. Frequently used imports are moved into the main JavaScript bundle if they are used in%20at%20least half of the site pages.
+There is one notable exception. Frequently used imports are moved into the main JavaScript bundle if they are used in at least half of the site pages.
 
 ### Prefetching
 
@@ -129,7 +129,7 @@ Make sure that you have the latest version of Node. Check with running `node -v`
 
 After you install Node.js, you will have the `npm` command available into your command line.
 
-If you have any trouble%20at%20this stage, I recommend the following tutorials I wrote for you:
+If you have any trouble at this stage, I recommend the following tutorials I wrote for you:
 
 - [how to install Node.js](https://flaviocopes.com/node-installation/)
 - [how to update Node.js](https://flaviocopes.com/how-to-update-node/)
@@ -146,7 +146,7 @@ We can choose 2 routes now: using `create-next-app` or the classic approach whic
 
 If you're familiar with [`create-react-app`](https://flaviocopes.com/react-create-react-app/), `create-next-app` is the same thing - except it creates a Next app instead of a React app, as the name implies.
 
-I assume you installed Node.js already, which from version 5.2 (2+ years ago%20at%20the time of writing) comes with the [`npx` command](https://flaviocopes.com/npx/) bundled. This handy tool lets us download and execute a JavaScript command, and we'll use it like this:
+I assume you installed Node.js already, which from version 5.2 (2+ years ago at the time of writing) comes with the [`npx` command](https://flaviocopes.com/npx/) bundled. This handy tool lets us download and execute a JavaScript command, and we'll use it like this:
 
 ```bash
 npx create-next-app
@@ -164,7 +164,7 @@ And here's the result on http://localhost:3000:
 
 ![](images/Screen%20Shot%202019-11-14%20at%2016.47.17.png)
 
-This is the recommended way to start a Next.js application, as it gives you structure and sample code to play with. And there's more than just that default sample application: you can use any of the examples stored%20at%20<https://github.com/zeit/next.js/tree/canary/examples> using the `--example` option, for example try:
+This is the recommended way to start a Next.js application, as it gives you structure and sample code to play with. And there's more than just that default sample application: you can use any of the examples stored at <https://github.com/zeit/next.js/tree/canary/examples> using the `--example` option, for example try:
 
 ```bash
 npx create-next-app --example blog-starter
@@ -308,7 +308,7 @@ When we viewed the page source, we saw a bunch of JavaScript files being loaded:
 
 ![](images/Screen%20Shot%202019-11-04%20at%2011.34.41.png)
 
-Let's start by putting the code in an [HTML formatter](https://htmlformatter.com/) to get it formatted better, so we humans can get a better chance%20at%20understanding it:
+Let's start by putting the code in an [HTML formatter](https://htmlformatter.com/) to get it formatted better, so we humans can get a better chance at understanding it:
 
 ```html
 <!DOCTYPE html>
@@ -349,7 +349,7 @@ We have 4 JavaScript files being declared to be preloaded in the `head`, using `
 
 This tells the browser to start loading those files as soon as possible, before the normal rendering flow starts. Without those, scripts would be loaded with an additional delay and this improves the page loading performance.
 
-Then those 4 files are loaded%20at%20the end of the `body`, along with `/_next/static/development/dll/dll_01ec57fc9b90d43b98a8.js` (31k LOC), and a JSON snippet that sets some defaults for the page data:
+Then those 4 files are loaded at the end of the `body`, along with `/_next/static/development/dll/dll_01ec57fc9b90d43b98a8.js` (31k LOC), and a JSON snippet that sets some defaults for the page data:
 
 ```html
 <script id="__NEXT_DATA__" type="application/json">
@@ -371,7 +371,7 @@ The 4 bundle files loaded are already implementing one feature called code split
 
 ## What's that icon on the bottom right?
 
-Did you see that little icon%20at%20the bottom right of the page, which looks like a lightning?
+Did you see that little icon at the bottom right of the page, which looks like a lightning?
 
 ![](images/Screen%20Shot%202019-11-04%20at%2013.21.42.png)
 
@@ -379,7 +379,7 @@ If you hover it, it's going to say "Prerendered page":
 
 ![](images/Screen%20Shot%202019-11-04%20at%2013.21.46.png)
 
-This icon, which is _only visible in development mode_ of course, tells you the page qualifies for automatic static optimization, which basically means that it does not depend on data that needs to be fetched%20at%20invokation time, and it can be prerendered and built as a static HTML file%20at%20build time (when we run `npm run build`).
+This icon, which is _only visible in development mode_ of course, tells you the page qualifies for automatic static optimization, which basically means that it does not depend on data that needs to be fetched at invokation time, and it can be prerendered and built as a static HTML file at build time (when we run `npm run build`).
 
 Next can determine this by the absence of the `getInitialProps()` method attached to the page component.
 
@@ -429,7 +429,7 @@ Using **Source Maps**, which are loaded by Next.js automatically in development 
 
 ![](images/Screen%20Shot%202019-11-04%20at%2014.41.33.png)
 
-The **Profiler** tab is even more awesome, if possible. It allows us to **record an interaction** in the app, and see what happens. I cannot show an example yet, because it needs%20at%20least 2 components to create an interaction, and we have just one now. I'll talk about this later.
+The **Profiler** tab is even more awesome, if possible. It allows us to **record an interaction** in the app, and see what happens. I cannot show an example yet, because it needs at least 2 components to create an interaction, and we have just one now. I'll talk about this later.
 
 ![](images/Screen%20Shot%202019-11-04%20at%2014.42.24.png)
 
@@ -453,7 +453,7 @@ Another tool that is essential is the `debugger` statement. Adding this statemen
 
 ![](images/Screen%20Shot%202019-11-04%20at%2015.10.32.png)
 
-Really awesome because now you can use the browser debugger to inspect values and run your app one line%20at%20a time.
+Really awesome because now you can use the browser debugger to inspect values and run your app one line at a time.
 
 You can also use the VS Code debugger to debug server-side code. I mention this technique and [this tutorial](https://github.com/Microsoft/vscode-recipes/tree/master/Next-js) to set this up.
 
@@ -600,7 +600,7 @@ How? We add a `pages/blog/[id].js` file. This file will handle all the dynamic U
 
 In the file name, `[id]` inside the square brackets means that anything that's dynamic will be put inside the `id` parameter of the **query property** of the **router**.
 
-Ok, that's a bit too many things%20at%20once.
+Ok, that's a bit too many things at once.
 
 What's the **router**?
 
@@ -778,7 +778,7 @@ As soon as an element wrapped within `<Link>` appears in the viewport (which mea
 
 This behavior is only being triggered in **production mode** (we'll talk about this in-depth later), which means you have to stop the application if you are running it with `npm run dev`, compile your production bundle with `npm run build` and run it with  `npm run start` instead.
 
-Using the Network inspector in the DevTools you'll notice that any links above the fold,%20at%20page load, start the prefetching as soon as the `load` event has been fired on your page (triggered when the page is fully loaded, and happens after the `DOMContentLoaded` event).
+Using the Network inspector in the DevTools you'll notice that any links above the fold, at page load, start the prefetching as soon as the `load` event has been fired on your page (triggered when the page is fully loaded, and happens after the `DOMContentLoaded` event).
 
 Any other `Link` tag not in the viewport will be prefetched when the user scrolls and it
 
@@ -1009,7 +1009,7 @@ But Next.js comes with [`styled-jsx`](https://github.com/zeit/styled-jsx) built-
 
 And it's a pretty cool library that provides us scoped CSS, which is great for maintainability because the CSS is only affecting the component it's applied to.
 
-I think this is a great approach%20at%20writing CSS, without the need to apply additional libraries or preprocessors that add complexity.
+I think this is a great approach at writing CSS, without the need to apply additional libraries or preprocessors that add complexity.
 
 To add CSS to a React component in Next.js we insert it inside a snippet in the JSX, which start with
 
@@ -1563,7 +1563,7 @@ One fix would be to look for a library with a smaller size, as Moment.js is not 
 
 What we can do instead is separating all the Moment code in a **separate bundle**.
 
-How? Instead of importing Moment%20at%20the component level, we perform an async import inside `getInitialProps`, and we calculate the value to send to the component.
+How? Instead of importing Moment at the component level, we perform an async import inside `getInitialProps`, and we calculate the value to send to the component.
 Remember that we can't return complex objects inside the `getInitialProps()` returned object, so we calculate the date inside it:
 
 ```js
@@ -1604,4 +1604,4 @@ There is a lot more to know about Next.js. I didn't talk about managing user ses
 
 The goal of this Handbook is not to teach you everything, but instead it aims to introduce you, gradually, to all the power of Next.js.
 
-The next step I recommend is to take a good read%20at%20the [Next.js official documentation](https://nextjs.org/docs) to find out more about all the features and functionality I didn't talk about, and take a look%20at%20all the additional functionalities introduced by [Next.js plugins](https://github.com/zeit/next-plugins), some of which are pretty amazing.
+The next step I recommend is to take a good read at the [Next.js official documentation](https://nextjs.org/docs) to find out more about all the features and functionality I didn't talk about, and take a look at all the additional functionalities introduced by [Next.js plugins](https://github.com/zeit/next-plugins), some of which are pretty amazing.

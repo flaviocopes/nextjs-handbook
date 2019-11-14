@@ -121,7 +121,7 @@ Gatsby is also heavily based on [GraphQL](https://flaviocopes.com/graphql/), som
 
 ## How to install Next.js
 
-To install Next.js, you need to have Node.js installed. 
+To install Next.js, you need to have Node.js installed.
 
 Make sure that you have the latest version of Node. Check with running `node -v` in your terminal, and compare it to the latest LTS version listed on https://nodejs.org/.
 
@@ -129,11 +129,11 @@ After you install Node.js, you will have the `npm` command available into your c
 
 If you have any trouble%20at%20this stage, I recommend the following tutorials I wrote for you:
 
-- [how to install Node.js](https://flaviocopes.com/node-installation/) 
-- [how to update Node.js](https://flaviocopes.com/how-to-update-node/) 
+- [how to install Node.js](https://flaviocopes.com/node-installation/)
+- [how to update Node.js](https://flaviocopes.com/how-to-update-node/)
 - [An introduction to the npm package manager](https://flaviocopes.com/npm/)
 - [Unix Shells Tutorial](https://flaviocopes.com/shells/)
-- [How to use the macOS terminal](https://flaviocopes.com/macos-terminal/) 
+- [How to use the macOS terminal](https://flaviocopes.com/macos-terminal/)
 - [The Bash Shell](https://flaviocopes.com/bash/)
 
 Now that you have Node updated to the latest version and `npm`, we're set!
@@ -152,15 +152,15 @@ npx create-next-app
 
 The command asks the application name (and creates a new folder for you with that name), then downloads all the packages it needs (`react`, `react-dom`, `next`), sets the `package.json` to:
 
-![](Screen%20Shot%202019-11-14%20at%2016.46.47.png)
+![](images/Screen%20Shot%202019-11-14%20at%2016.46.47.png)
 
 and you can immediately run the sample app by running `npm run dev`:
 
-![](Screen%20Shot%202019-11-14%20at%2016.46.32.png)
+![](images/Screen%20Shot%202019-11-14%20at%2016.46.32.png)
 
 And here's the result on http://localhost:3000:
 
-![](Screen%20Shot%202019-11-14%20at%2016.47.17.png)
+![](images/Screen%20Shot%202019-11-14%20at%2016.47.17.png)
 
 This is the recommended way to start a Next.js application, as it gives you structure and sample code to play with. And there's more than just that default sample application: you can use any of the examples stored%20at%20<https://github.com/zeit/next.js/tree/canary/examples> using the `--example` option, for example try:
 
@@ -170,7 +170,7 @@ npx create-next-app --example blog-starter
 
 Which gives you an immediately usable blog instance with syntax highlighting too:
 
-![](Screen%20Shot%202019-11-14%20at%2017.13.29.png)
+![](images/Screen%20Shot%202019-11-14%20at%2017.13.29.png)
 
 ### Manually create a Next.js app
 
@@ -196,7 +196,7 @@ npm init -y
 
 The `-y` option tells `npm` to use the default settings for a project, populating a sample `package.json` file.
 
-![](Screen%20Shot%202019-11-04%20at%2016.59.21.png)
+![](images/Screen%20Shot%202019-11-04%20at%2016.59.21.png)
 
 Now install Next and React:
 
@@ -247,9 +247,9 @@ and replace the `scripts` section with:
 
 to add the Next.js build commands, which we're going to use soon.
 
-> Tip: use `"dev": "next -p 3001",` to change the port and run, in this example, on port 3001 
+> Tip: use `"dev": "next -p 3001",` to change the port and run, in this example, on port 3001
 
-![](Screen%20Shot%202019-11-04%20at%2017.01.03.png)
+![](images/Screen%20Shot%202019-11-04%20at%2017.01.03.png)
 
 Now create a `pages` folder, and add an `index.js` file.
 
@@ -271,11 +271,11 @@ Now using the terminal, run `npm run dev` to start the Next development server.
 
 This will make the app available on port 3000, on localhost.
 
-![](Screen%20Shot%202019-11-04%20at%2011.24.02.png)
+![](images/Screen%20Shot%202019-11-04%20at%2011.24.02.png)
 
 Open <http://localhost:3000> in your browser to see it.
 
-![](Screen%20Shot%202019-11-04%20at%2011.24.23.png)
+![](images/Screen%20Shot%202019-11-04%20at%2011.24.23.png)
 
 ## View source to confirm SSR is working
 
@@ -292,7 +292,7 @@ This has 3 major benefits:
 Let's view the source of the app.
 Using Chrome you can right-click anywhere in the page, and press **View Page Source**.
 
-![](Screen%20Shot%202019-11-04%20at%2011.33.10.png)
+![](images/Screen%20Shot%202019-11-04%20at%2011.33.10.png)
 
 If you view the source of the page, you'll see the `<div><h1>Airbnb clone</h1></div>` snippet in the HTML `body`, along with a bunch of JavaScript files - the app bundles.
 
@@ -304,7 +304,7 @@ The React app will be launched on the client, and will be the one powering inter
 
 When we viewed the page source, we saw a bunch of JavaScript files being loaded:
 
-![](Screen%20Shot%202019-11-04%20at%2011.34.41.png)
+![](images/Screen%20Shot%202019-11-04%20at%2011.34.41.png)
 
 Let's start by putting the code in an [HTML formatter](https://htmlformatter.com/) to get it formatted better, so we humans can get a better chance%20at%20understanding it:
 
@@ -369,13 +369,13 @@ The 4 bundle files loaded are already implementing one feature called code split
 
 ## What's that icon on the bottom right?
 
-Did you see that little icon%20at%20the bottom right of the page, which looks like a lightning? 
+Did you see that little icon%20at%20the bottom right of the page, which looks like a lightning?
 
-![](Screen%20Shot%202019-11-04%20at%2013.21.42.png)
+![](images/Screen%20Shot%202019-11-04%20at%2013.21.42.png)
 
 If you hover it, it's going to say "Prerendered page":
 
-![](Screen%20Shot%202019-11-04%20at%2013.21.46.png)
+![](images/Screen%20Shot%202019-11-04%20at%2013.21.46.png)
 
 This icon, which is _only visible in development mode_ of course, tells you the page qualifies for automatic static optimization, which basically means that it does not depend on data that needs to be fetched%20at%20invokation time, and it can be prerendered and built as a static HTML file%20at%20build time (when we run `npm run build`).
 
@@ -385,7 +385,7 @@ When this is the case, our page can be even faster because it will be served sta
 
 Another useful icon that might appear next to it, or instead of it on non-prerended pages, is a little animated triangle:
 
-![](Screen%20Shot%202019-11-14%20at%2014.56.21.png)
+![](images/Screen%20Shot%202019-11-14%20at%2014.56.21.png)
 
 This is a compilation indicator, and appears when you save a page and Next.js is compiling the application before hot code reloading kicks in to reload the code in the application automatically.
 
@@ -403,37 +403,37 @@ They provide an inspector that reveals the React components tree that builds you
 
 Once you have installed the React Developer Tools, you can open the regular browser devtools (in Chrome, it's right-click in the page, then click `Inspect`) and you'll find 2 new panels: **Components** and **Profiler**.
 
-![](Screen%20Shot%202019-11-04%20at%2014.26.12.png)
+![](images/Screen%20Shot%202019-11-04%20at%2014.26.12.png)
 
 If you move the mouse over the components, you'll see that in the page, the browser will select the parts that are rendered by that component.
 
 If you select any component in the tree, the right panel will show you a reference to **the parent component**, and the props passed to it:
 
-![](Screen%20Shot%202019-11-04%20at%2014.27.05.png)
+![](images/Screen%20Shot%202019-11-04%20at%2014.27.05.png)
 
 You can easily navigate by clicking around the component names.
 
 You can click the eye icon in the Developer Tools toolbar   to inspect the DOM element, and also if you use the first icon, the one with the mouse icon (which conveniently sits under the similar regular DevTools icon), you can hover an element in the browser UI to directly select the React component that renders it.
 
-You can use the `bug` icon to log a component data to the console. 
+You can use the `bug` icon to log a component data to the console.
 
-![](Screen%20Shot%202019-11-04%20at%2014.31.25.png)
+![](images/Screen%20Shot%202019-11-04%20at%2014.31.25.png)
 
 This is pretty awesome because once you have the data printed there, you can right-click any element and press "Store as a global variable". For example here I did it with the `url` prop, and I was able to inspect it in the console using the temporary variable assigned to it, `temp1`:
 
-![](Screen%20Shot%202019-11-04%20at%2014.40.22.png)
+![](images/Screen%20Shot%202019-11-04%20at%2014.40.22.png)
 
 Using **Source Maps**, which are loaded by Next.js automatically in development mode, from the Components panel we can click the `<>` code and the DevTools will switch to the Source panel, showing us the component source code:
 
-![](Screen%20Shot%202019-11-04%20at%2014.41.33.png)
+![](images/Screen%20Shot%202019-11-04%20at%2014.41.33.png)
 
 The **Profiler** tab is even more awesome, if possible. It allows us to **record an interaction** in the app, and see what happens. I cannot show an example yet, because it needs%20at%20least 2 components to create an interaction, and we have just one now. I'll talk about this later.
 
-![](Screen%20Shot%202019-11-04%20at%2014.42.24.png)
+![](images/Screen%20Shot%202019-11-04%20at%2014.42.24.png)
 
 I showed all screenshots using Chrome, but the React Developer Tools works in the same way in Firefox:
 
-![](Screen%20Shot%202019-11-04%20at%2014.45.20.png)
+![](images/Screen%20Shot%202019-11-04%20at%2014.45.20.png)
 
 ## Other debugging techniques you can use
 
@@ -449,7 +449,7 @@ Just remember if you are surprised by missing logging.
 
 Another tool that is essential is the `debugger` statement. Adding this statement to a component will pause the browser rendering the page:
 
-![](Screen%20Shot%202019-11-04%20at%2015.10.32.png)
+![](images/Screen%20Shot%202019-11-04%20at%2015.10.32.png)
 
 Really awesome because now you can use the browser debugger to inspect values and run your app one line%20at%20a time.
 
@@ -459,22 +459,22 @@ You can also use the VS Code debugger to debug server-side code. I mention this 
 
 Now that we have a good grasp of the tools we can use to help us develop Next.js apps, let's continue from where we left our first app:
 
-![](Screen%20Shot%202019-11-04%20at%2013.21.42.png)
+![](images/Screen%20Shot%202019-11-04%20at%2013.21.42.png)
 
 I want to add a second page to this website, a blog. It's going to be served into `/blog`, and for the time being it will just contain a simple static page, just like our first `index.js` component:
 
 
-![](Screen%20Shot%202019-11-04%20at%2015.39.40.png)
+![](images/Screen%20Shot%202019-11-04%20at%2015.39.40.png)
 
 After saving the new file, the `npm run dev` process already running is already capable of rendering the page, without the need to restart it.
 
 When we hit the URL http://localhost:3000/blog we have the new page:
 
-![](Screen%20Shot%202019-11-04%20at%2015.41.39.png)
+![](images/Screen%20Shot%202019-11-04%20at%2015.41.39.png)
 
 and here's what the terminal told us:
 
-![](Screen%20Shot%202019-11-04%20at%2015.41.03.png)
+![](images/Screen%20Shot%202019-11-04%20at%2015.41.03.png)
 
 Now the fact that the URL is `/blog` depends on just the filename, and its position under the `pages` folder.
 
@@ -484,7 +484,7 @@ What does not matter, for the URL purposes, is the component name inside the fil
 
 Try going and viewing the source of the page, when loaded from the server it will list `/_next/static/development/pages/blog.js` as one of the bundles loaded, and not `/_next/static/development/pages/index.js` like in the home page. This is because thanks to automatic code splitting we don't need the bundle that serves the home page. Just the bundle that serves the blog page.
 
-![](Screen%20Shot%202019-11-04%20at%2016.24.53.png)
+![](images/Screen%20Shot%202019-11-04%20at%2016.24.53.png)
 
 We can also just export an anonymous function from `blog.js`:
 
@@ -518,7 +518,7 @@ Normal HTML links within pages are done using the `a` tag:
 <a href="/blog">Blog</a>
 ```
 
-We can't do do that in Next.js.  
+We can't do do that in Next.js.
 
 Why? We technically _can_, of course, because this is the Web and *on the Web things never break* (that's why we can still use the `<marquee>` tag. But one of the main benefits of using Next is that once a page is loaded, transitions to other page are very fast thanks to client-side rendering.
 
@@ -537,13 +537,13 @@ export default Index
 
 Now open the **DevTools**, and the **Network panel** in particular. The first time we load `http://localhost:3000/` we get all the page bundles loaded:
 
-![](Screen%20Shot%202019-11-04%20at%2016.26.00.png)
+![](images/Screen%20Shot%202019-11-04%20at%2016.26.00.png)
 
 Now if you click the "Preserve log" button (to avoid clearing the Network panel), and click the "Blog" link, this is what happens:
 
-![](Screen%20Shot%202019-11-04%20at%2016.27.16.png)
+![](images/Screen%20Shot%202019-11-04%20at%2016.27.16.png)
 
-We got all that JavaScript from the server, again! But.. we don't need all that JavaScript if we already got it. We'd just need the `blog.js` page bundle, the only one that's new to the page. 
+We got all that JavaScript from the server, again! But.. we don't need all that JavaScript if we already got it. We'd just need the `blog.js` page bundle, the only one that's new to the page.
 
 To fix this problem, we use a component provided by Next, called Link.
 
@@ -572,7 +572,7 @@ export default Index
 
 Now if you retry the thing we did previously, you'll be able to see that only the `blog.js` bundle is loaded when we move to the blog page:
 
-![](Screen%20Shot%202019-11-04%20at%2016.35.18.png)
+![](images/Screen%20Shot%202019-11-04%20at%2016.35.18.png)
 
 and the page loaded so faster than before, the browser usual spinner on the tab didn't even appear. Yet the URL changed, as you can see. This is working seamlessly with the browser [History API](https://flaviocopes.com/history-api/).
 
@@ -582,17 +582,17 @@ What if you now press the back button? Nothing is being loaded, because the brow
 
 ## Dynamic content with the router
 
-In the previous chapter we saw how to link the home to the blog page. 
+In the previous chapter we saw how to link the home to the blog page.
 
 A blog is a great use case for Next.js, one we'll continue to explore in this chapter by adding **blog posts**.
 
 Blog posts have a dynamic URL. For example a post titled "Hello World" might have the URL `/blog/hello-world`. A post titled "My second post" might have the URL `/blog/my-second-post`.
 
-This content is dynamic, and might be taken from a database, markdown files or more. 
+This content is dynamic, and might be taken from a database, markdown files or more.
 
 Next.js can serve dynamic content based on a **dynamic URL**.
 
-We create a dynamic URL by creating a dynamic page with the `[]` syntax. 
+We create a dynamic URL by creating a dynamic page with the `[]` syntax.
 
 How? We add a `pages/blog/[id].js` file. This file will handle all the dynamic URLs under the `/blog/` route, like the ones we mentioned above: `/blog/hello-world`, `/blog/my-second-post` and more.
 
@@ -639,11 +639,11 @@ export default () => {
     </>
   )
 }
-``` 
+```
 
 Now if you go to the `http://localhost:3000/blog/test` router, you should see this:
 
-![](Screen%20Shot%202019-11-05%20at%2016.41.32.png)
+![](images/Screen%20Shot%202019-11-05%20at%2016.41.32.png)
 
 We can use this `id` parameter to gather the post from a list of posts. From a database, for example. To keep things simple we'll add a `posts.json` file in the project root folder:
 
@@ -682,11 +682,11 @@ export default () => {
 
 Reloading the page should show us this result:
 
-![](Screen%20Shot%202019-11-05%20at%2016.44.07.png)
+![](images/Screen%20Shot%202019-11-05%20at%2016.44.07.png)
 
 But it's not! Instead, we get an error in the console, and an error in the browser, too:
- 
-![](Screen%20Shot%202019-11-05%20at%2018.18.17.png)
+
+![](images/Screen%20Shot%202019-11-05%20at%2018.18.17.png)
 
 Why? Because.. during rendering, when the component is initialized, the data is not there yet. We'll see how to provide the data to the component with getInitialProps in the next lesson.
 
@@ -715,7 +715,7 @@ Now things should work. Initially the component is rendered without the dynamic 
 
 And if you view source, there is that empty `<p>` tag in the HTML:
 
-![](Screen%20Shot%202019-11-05%20at%2018.20.58.png)
+![](images/Screen%20Shot%202019-11-05%20at%2018.20.58.png)
 
 We'll soon fix this issue that fails to implement SSR and this harms both loading times for our users, SEO and social sharing as we already discussed.
 
@@ -739,7 +739,7 @@ const Blog = () => (
 export default Blog
 ```
 
-And we can link them to the individual post pages, by importing `Link` from `next/link` and using it inside the posts loop: 
+And we can link them to the individual post pages, by importing `Link` from `next/link` and using it inside the posts loop:
 
 ```js
 import Link from 'next/link'
@@ -778,7 +778,7 @@ This behavior is only being triggered in **production mode** (we'll talk about t
 
 Using the Network inspector in the DevTools you'll notice that any links above the fold,%20at%20page load, start the prefetching as soon as the `load` event has been fired on your page (triggered when the page is fully loaded, and happens after the `DOMContentLoaded` event).
 
-Any other `Link` tag not in the viewport will be prefetched when the user scrolls and it 
+Any other `Link` tag not in the viewport will be prefetched when the user scrolls and it
 
 Prefetching is automatic on high speed connections (Wifi and 3g+ connections, unless the browser sends the [`Save-Data` HTTP Header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Save-Data).
 
@@ -796,7 +796,7 @@ One very important feature when working with links is determining what is the cu
 
 This is especially useful in your site header, for example.
 
-The Next.js default `Link` component offered in `next/link` does not do this automatically for us. 
+The Next.js default `Link` component offered in `next/link` does not do this automatically for us.
 
 We can create a Link component ourselves, and we store it in a file `Link.js` in the Components folder, and import that instead of the default `next/link`.
 
@@ -867,14 +867,14 @@ import { useRouter } from 'next/router'
 
 export default () => {
   const router = useRouter()
-  
+
   useEffect(() => {
     router.prefetch('/login')
   })
 }
 ```
 
-You can also use the router to listen for [route change events](https://nextjs.org/docs#router-events). 
+You can also use the router to listen for [route change events](https://nextjs.org/docs#router-events).
 
 ## Feed data to the components using getInitialProps
 
@@ -900,7 +900,7 @@ export default () => {
 
 we got this error:
 
-![](Screen%20Shot%202019-11-05%20at%2018.18.17.png)
+![](images/Screen%20Shot%202019-11-05%20at%2018.18.17.png)
 
 How do we solve this? And how do we make SSR work for dynamic routes?
 
@@ -975,7 +975,7 @@ export default Post
 
 Now there will be no error, and SSR will be working as expected, as you can see checking view source:
 
-![](Screen%20Shot%202019-11-05%20at%2018.53.02.png)
+![](images/Screen%20Shot%202019-11-05%20at%2018.53.02.png)
 
 The `getInitialProps` function will be executed on the server side, but also on the client side, when we navigate to a new page using the `Link` component as we did.
 
@@ -1009,7 +1009,7 @@ And it's a pretty cool library that provides us scoped CSS, which is great for m
 
 I think this is a great approach%20at%20writing CSS, without the need to apply additional libraries or preprocessors that add complexity.
 
-To add CSS to a React component in Next.js we insert it inside a snippet in the JSX, which start with 
+To add CSS to a React component in Next.js we insert it inside a snippet in the JSX, which start with
 
 ```js
 <style jsx>{`
@@ -1155,11 +1155,11 @@ export default Page => {
 
 In there we can import separate components for heading and/or sidebar, and we can also add all the CSS we need.
 
-And you use it in every page like this: 
+And you use it in every page like this:
 
 ```js
 import withLayout from '../components/Layout.js'
- 
+
 const Page = () => <p>Here's a page!</p>
 
 export default withLayout(Page)
@@ -1222,7 +1222,7 @@ This is a very interesting feature because it means that Next.js can be used to 
 
 API routes live under the `/pages/api/` folder and are mapped to the `/api` endpoint.
 
-This feature is _very_ useful when creating applications. 
+This feature is _very_ useful when creating applications.
 
 In those routes, we write Node.js code (rather than React code). It's a paradigm shift, you move from the frontend to the backend, but very seamlessly.
 
@@ -1253,7 +1253,7 @@ export default (req, res) => {
 
 It will listen on the `/api/commments` URL for GET requests, and you can try calling it using your browser:
 
-![](Screen%20Shot%202019-11-07%20at%2011.14.42.png)
+![](images/Screen%20Shot%202019-11-07%20at%2011.14.42.png)
 
 API routes can also use **dynamic routing** like pages, use the `[]` syntax to create a dynamic API route, like `/pages/api/comments/[id].js` which will retrieve the comments specific to a post id.
 
@@ -1269,7 +1269,7 @@ export default (req, res) => {
 
 Heres you can see the above code in action:
 
-![](Screen%20Shot%202019-11-07%20at%2011.59.53.png)
+![](images/Screen%20Shot%202019-11-07%20at%2011.59.53.png)
 
 In dynamic pages, you'd need to import `useRouter` from `next/router`, then get the router object using `const router = useRouter()`, and then we'd be able to get the `id` value using `router.query.id`.
 
@@ -1305,7 +1305,7 @@ You can make use of any Micro middleware in our API routes to add more functiona
 
 In your page components, you can execute code only in the server-side or on the client-side, but checking the `window` property.
 
-This property is only existing inside the browser, so you can check 
+This property is only existing inside the browser, so you can check
 
 ```js
 if (typeof window === 'undefined') {
@@ -1325,11 +1325,11 @@ if (typeof window !== 'undefined') {
 
 > JS Tip: We use the `typeof` operator here because we can't detect a value to be undefined in other ways. We can't do `if (window === undefined)` because we'd get a "window is not defined" runtime error
 
-Next.js, as a build-time optimization, also removes the code that uses those checks from bundles. A client-side bundle will not include the content wrapped into a `if (typeof window === 'undefined') {}` block. 
+Next.js, as a build-time optimization, also removes the code that uses those checks from bundles. A client-side bundle will not include the content wrapped into a `if (typeof window === 'undefined') {}` block.
 
-## Deploying the production version 
+## Deploying the production version
 
-Deploying an app is always left last in tutorials. 
+Deploying an app is always left last in tutorials.
 
 Here I want to introduce it early, just because it's so easy to deploy a Next.js app that we can dive into it now, and then move on to other more complex topics later on.
 
@@ -1355,7 +1355,7 @@ So, let's create a production deploy of our app. Build it using:
 npm run build
 ```
 
-![](Screen%20Shot%202019-11-06%20at%2013.46.31.png)
+![](images/Screen%20Shot%202019-11-06%20at%2013.46.31.png)
 
 The output of the command tells us that some routes (`/` and `/blog` are now prerendered as static HTML, while `/blog/[id]` will be served by the Node.js backend.
 
@@ -1365,7 +1365,7 @@ Then you can run `npm run start` to start the production server locally:
 npm run start
 ```
 
-![](Screen%20Shot%202019-11-06%20at%2013.47.01.png)
+![](images/Screen%20Shot%202019-11-06%20at%2013.47.01.png)
 
 Visiting <http://localhost:3000> will show us the production version of the app, locally.
 
@@ -1399,7 +1399,7 @@ and the app will ask you for your email.
 
 If you haven't registered already, create an account on <https://zeit.co/signup> before continuing, then add your email to the CLI client.
 
-Once this is done, from the Next.js project root folder run 
+Once this is done, from the Next.js project root folder run
 
 ```bash
 now
@@ -1407,29 +1407,29 @@ now
 
 and the app will be instantly deployed to the Now cloud, and you'll be given the unique app URL:
 
-![](Screen%20Shot%202019-11-06%20at%2014.21.09.png)
+![](images/Screen%20Shot%202019-11-06%20at%2014.21.09.png)
 
 Once you run the `now` program, the app is deployed to a random URL under the `now.sh` domain.
 
 We can see 3 different URLs in the output given in the image:
 
-- https://firstproject-2pv7khwwr.now.sh 
+- https://firstproject-2pv7khwwr.now.sh
 - https://firstproject-sepia-ten.now.sh
 - https://firstproject.flaviocopes.now.sh
 
 Why so many?
 
-The first is the URL identifying the deploy. Every time we deploy the app, this URL will change. 
+The first is the URL identifying the deploy. Every time we deploy the app, this URL will change.
 
 You can test immediately by changing something in the project code, and running `now` again:
 
-![](Screen%20Shot%202019-11-06%20at%2015.08.11.png)
+![](images/Screen%20Shot%202019-11-06%20at%2015.08.11.png)
 
-The other 2 URLs will not change. The first is a random one, the second is your project name (which defaults to the current project folder, your account name and then `now.sh`. 
+The other 2 URLs will not change. The first is a random one, the second is your project name (which defaults to the current project folder, your account name and then `now.sh`.
 
 If you visit the URL, you will see the app deployed to production.
 
-![](Screen%20Shot%202019-11-06%20at%2014.21.43.png)
+![](images/Screen%20Shot%202019-11-06%20at%2014.21.43.png)
 
 You can configure Now to serve the site to your own custom domain or subdomain, but I will not dive into that right now.
 
@@ -1474,7 +1474,7 @@ Like this:
 }
 ```
 
-then install those 2 packages: 
+then install those 2 packages:
 
 ```bash
 npm install --dev cross-env @next/bundle-analyzer
@@ -1496,18 +1496,18 @@ Now run the command
 npm run analyze
 ```
 
-![](Screen%20Shot%202019-11-06%20at%2016.12.40.png)
+![](images/Screen%20Shot%202019-11-06%20at%2016.12.40.png)
 
 This should open 2 pages in the browser. One for the client bundles, and one for the server bundles:
 
 
-![](Screen%20Shot%202019-11-06%20at%2016.11.14.png)
+![](images/Screen%20Shot%202019-11-06%20at%2016.11.14.png)
 
-![](Screen%20Shot%202019-11-06%20at%2016.11.23.png)
+![](images/Screen%20Shot%202019-11-06%20at%2016.11.23.png)
 
 This is incredibly useful. You can inspect what's taking the most space in the bundles, and you can also use the sidebar to exclude bundles, for an easier visualization of the smaller ones:
 
-![](Screen%20Shot%202019-11-06%20at%2016.14.12.png)
+![](images/Screen%20Shot%202019-11-06%20at%2016.14.12.png)
 
 ## Lazy loading modules
 
@@ -1545,15 +1545,15 @@ I'm just adding today's date, as an example.
 
 This will include Moment.js in the blog post page bundle, as you can see by running `npm run analyze`:
 
-![](Screen%20Shot%202019-11-06%20at%2017.56.14.png)
+![](images/Screen%20Shot%202019-11-06%20at%2017.56.14.png)
 
 See that we now have a red entry in `/blog/[id]`, the route that we added Moment.js to!
 
-It went from ~1kB to 350kB, quite a big deal. And this is because the Moment.js library itself is 349kB. 
+It went from ~1kB to 350kB, quite a big deal. And this is because the Moment.js library itself is 349kB.
 
 The client bundles visualization now shows us that the bigger bundle is the page one, which before was very little. And 99% of its code is Moment.js.
 
-![](Screen%20Shot%202019-11-06%20at%2017.55.50.png)
+![](images/Screen%20Shot%202019-11-06%20at%2017.55.50.png)
 
 Every time we load a blog post we are going to have all this code transferred to the client. Which is not ideal.
 
@@ -1562,7 +1562,7 @@ One fix would be to look for a library with a smaller size, as Moment.js is not 
 What we can do instead is separating all the Moment code in a **separate bundle**.
 
 How? Instead of importing Moment%20at%20the component level, we perform an async import inside `getInitialProps`, and we calculate the value to send to the component.
-Remember that we can't return complex objects inside the `getInitialProps()` returned object, so we calculate the date inside it:  
+Remember that we can't return complex objects inside the `getInitialProps()` returned object, so we calculate the date inside it:
 
 ```js
 import posts from '../../posts.json'
@@ -1592,7 +1592,7 @@ See that special call to `.default()` after `await import`? It's needed to refer
 
 Now if we run `npm run analyze` again, we can see this:
 
-![](Screen%20Shot%202019-11-06%20at%2018.00.22.png)
+![](images/Screen%20Shot%202019-11-06%20at%2018.00.22.png)
 
 Our `/blog/[id]` bundle is again very small, as Moment has been moved to its own bundle file, loaded separately by the browser.
 

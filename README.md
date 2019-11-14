@@ -3,6 +3,31 @@
 ## Index
 
 1. [Introduction](#introduction)
+2. [The main features provided by Next.js](#the-main-features-provided-by-nextjs)
+3. [Next.js vs Gatsby vs `create-react-app`](#nextjs-vs-gatsby-vs-create-react-app)
+4. [How to install Next.js](#how-to-install-nextjs)
+5. [View source to confirm SSR is working](#view-source-to-confirm-ssr-is-working)
+6. [The app bundles](#the-app-bundles)
+7. [What's that icon in the bottom right?](#whats-that-icon-on-the-bottom-right)
+8. [Install the React DevTools](#install-the-react-developer-tools)
+9. [Other debugging techniques you can use](#other-debugging-techniques-you-can-use)
+10. [Adding a second page to the site](#adding-a-second-page-to-the-site)
+11. [Linking the two pages](#linking-the-two-pages)
+12. [Dynamic content with the router](#dynamic-content-with-the-router)
+13. [Prefetching](#prefetching-1)
+14. [Using the router to detect the active link](#using-the-router-to-detect-the-active-link)
+15. [Using `next/router`](#using-nextrouter)
+16. [Feed data to the components using `getInitialProps()`](#feed-data-to-the-components-using-getinitialprops)
+17. [CSS](#css)
+18. [Populating the head tag with custom tags](#populating-the-head-tag-with-custom-tags)
+19. [Adding a wrapper component](#adding-a-wrapper-component)
+20. [API routes](#api-routes)
+21. [Run code on the server side, or on the client side](#run-code-only-on-the-server-side-or-client-side)
+22. [Deploying the production version](#deploying-the-production-version)
+23. [Deploying on Now](#deploying-on-now)
+24. [Analyzing the app bundles](#analyzing-the-app-bundles)
+25. [Lazy loading modules](#lazy-loading-modules)
+26. [Where to go from here](#where-to-go-from-here)
 
 ## Introduction
 

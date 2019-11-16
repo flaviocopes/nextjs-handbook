@@ -1132,7 +1132,7 @@ When mounting the component, Next.js will make sure the tags inside `Head` are a
 
 ## Adding a wrapper component
 
-All the pages on your site look more or less the same. There's a chrome, a common base layer, and you just want to change what's inside.
+All the pages on your site look more or less the same. There's a chrome window, a common base layer, and you just want to change what's inside.
 
 There's a nav bar, a sidebar, and then the actual content.
 

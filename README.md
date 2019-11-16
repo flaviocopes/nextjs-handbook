@@ -296,7 +296,7 @@ Using Chrome you can right-click anywhere in the page, and press **View Page Sou
 
 ![](images/Screen%20Shot%202019-11-04%20at%2011.33.10.png)
 
-If you view the source of the page, you'll see the `<div><h1>Airbnb clone</h1></div>` snippet in the HTML `body`, along with a bunch of JavaScript files - the app bundles.
+If you view the source of the page, you'll see the `<div><h1>Home page</h1></div>` snippet in the HTML `body`, along with a bunch of JavaScript files - the app bundles.
 
 We don't need to set up anything, SSR (server-side rendering) is already working for us.
 

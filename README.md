@@ -1305,7 +1305,7 @@ You can make use of any Micro middleware in our API routes to add more functiona
 
 ## Run code only on the server side or client side
 
-In your page components, you can execute code only in the server-side or on the client-side, but checking the `window` property.
+In your page components, you can execute code only in the server-side or on the client-side, by checking the `window` property.
 
 This property is only existing inside the browser, so you can check
 

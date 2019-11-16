@@ -1249,7 +1249,7 @@ Here's a sample code, which returns to the client the list of comments:
 import comments from './comments.json'
 
 export default (req, res) => {
-  res.status(200).json(feeds)
+  res.status(200).json(comments)
 }
 ```
 

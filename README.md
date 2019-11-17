@@ -296,7 +296,7 @@ Using Chrome you can right-click anywhere in the page, and press **View Page Sou
 
 ![](images/Screen%20Shot%202019-11-04%20at%2011.33.10.png)
 
-If you view the source of the page, you'll see the `<div><h1>Airbnb clone</h1></div>` snippet in the HTML `body`, along with a bunch of JavaScript files - the app bundles.
+If you view the source of the page, you'll see the `<div><h1>Home page</h1></div>` snippet in the HTML `body`, along with a bunch of JavaScript files - the app bundles.
 
 We don't need to set up anything, SSR (server-side rendering) is already working for us.
 
@@ -1132,7 +1132,7 @@ When mounting the component, Next.js will make sure the tags inside `Head` are a
 
 ## Adding a wrapper component
 
-All the pages on your site look more or less the same. There's a chrome, a common base layer, and you just want to change what's inside.
+All the pages on your site look more or less the same. There's a chrome window, a common base layer, and you just want to change what's inside.
 
 There's a nav bar, a sidebar, and then the actual content.
 
@@ -1249,7 +1249,7 @@ Here's a sample code, which returns to the client the list of comments:
 import comments from './comments.json'
 
 export default (req, res) => {
-  res.status(200).json(feeds)
+  res.status(200).json(comments)
 }
 ```
 
@@ -1305,7 +1305,7 @@ You can make use of any Micro middleware in our API routes to add more functiona
 
 ## Run code only on the server side or client side
 
-In your page components, you can execute code only in the server-side or on the client-side, but checking the `window` property.
+In your page components, you can execute code only in the server-side or on the client-side, by checking the `window` property.
 
 This property is only existing inside the browser, so you can check
 

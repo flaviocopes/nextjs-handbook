@@ -43,7 +43,7 @@ The solution to both of those problems is **server rendering**, also called **st
 
 [Next.js](https://nextjs.org) is one React framework to do all of this in a very simple way, but it's not limited to this. It's advertised by its creators as a **zero-configuration, single-command toolchain for React apps**.
 
-It provides a common structure that allows you to easily build a frontend React application, and transparently handle server-side rendering for you.
+It provides a common structure that allows you to easily build a frontend React application, and transparently handles server-side rendering for you.
 
 ## The main features provided by Next.js
 
@@ -67,7 +67,7 @@ You can render React components on the server side, before sending the HTML to t
 
 ### Ecosystem Compatibility
 
-Next.js plays well with the rest of the JavaScript, Node and React ecosystem.
+Next.js plays well with the rest of the JavaScript, Node, and React ecosystem.
 
 ### Automatic Code Splitting
 
@@ -95,13 +95,13 @@ You can import JavaScript modules and React Components dynamically.
 
 Using the `next export` command, Next.js allows you to export a fully static site from your app.
 
-### TypeScript support
+### TypeScript Support
 
 Next.js is written in TypeScript and as such comes with an excellent TypeScript support.
 
 ## Next.js vs Gatsby vs `create-react-app`
 
-Next.js, [Gatsby](https://flaviocopes.com/gatsby/) and [`create-react-app`](https://flaviocopes.com/react-create-react-app/) are amazing tools we can use to power our applications.
+Next.js, [Gatsby](https://flaviocopes.com/gatsby/), and [`create-react-app`](https://flaviocopes.com/react-create-react-app/) are amazing tools we can use to power our applications.
 
 Let's first say what they have in common. They all have React under the hood, powering the entire development experience. They also abstract [webpack](https://flaviocopes.com/webpack/) and all those low level things that we used to configure manually in the good old days.
 
@@ -121,7 +121,7 @@ If my goal was to build a static site, I'd have a hard time choosing and perhaps
 
 Gatsby is also heavily based on [GraphQL](https://flaviocopes.com/graphql/), something you might really like or dislike depending on your opinions and needs.
 
-## How to install Next.js
+## How to install Next.js?
 
 To install Next.js, you need to have Node.js installed.
 
@@ -131,14 +131,14 @@ After you install Node.js, you will have the `npm` command available into your c
 
 If you have any trouble at this stage, I recommend the following tutorials I wrote for you:
 
-- [how to install Node.js](https://flaviocopes.com/node-installation/)
-- [how to update Node.js](https://flaviocopes.com/how-to-update-node/)
+- [How to install Node.js](https://flaviocopes.com/node-installation/)
+- [How to update Node.js](https://flaviocopes.com/how-to-update-node/)
 - [An introduction to the npm package manager](https://flaviocopes.com/npm/)
 - [Unix Shells Tutorial](https://flaviocopes.com/shells/)
 - [How to use the macOS terminal](https://flaviocopes.com/macos-terminal/)
 - [The Bash Shell](https://flaviocopes.com/bash/)
 
-Now that you have Node updated to the latest version and `npm`, we're set!
+Now that you have Node, updated to the latest version, and `npm`, we're set!
 
 We can choose 2 routes now: using `create-next-app` or the classic approach which involves installing and setting up a Next app manually.
 
@@ -146,7 +146,7 @@ We can choose 2 routes now: using `create-next-app` or the classic approach whic
 
 If you're familiar with [`create-react-app`](https://flaviocopes.com/react-create-react-app/), `create-next-app` is the same thing - except it creates a Next app instead of a React app, as the name implies.
 
-I assume you installed Node.js already, which from version 5.2 (2+ years ago at the time of writing) comes with the [`npx` command](https://flaviocopes.com/npx/) bundled. This handy tool lets us download and execute a JavaScript command, and we'll use it like this:
+I assume you have already installed Node.js, which, from version 5.2 (2+ years ago at the time of writing), comes with the [`npx` command](https://flaviocopes.com/npx/) bundled. This handy tool lets us download and execute a JavaScript command, and we'll use it like this:
 
 ```bash
 npx create-next-app
@@ -164,7 +164,7 @@ And here's the result on http://localhost:3000:
 
 ![](images/Screen%20Shot%202019-11-14%20at%2016.47.17.png)
 
-This is the recommended way to start a Next.js application, as it gives you structure and sample code to play with. And there's more than just that default sample application: you can use any of the examples stored at <https://github.com/zeit/next.js/tree/canary/examples> using the `--example` option, for example try:
+This is the recommended way to start a Next.js application, as it gives you structure and sample code to play with. There's more than just that default sample application; you can use any of the examples stored at <https://github.com/zeit/next.js/tree/canary/examples> using the `--example` option. For example try:
 
 ```bash
 npx create-next-app --example blog-starter
@@ -183,7 +183,7 @@ mkdir nextjs
 cd nextjs
 ```
 
-and create your first Next project
+and create your first Next project directory:
 
 ```sh
 mkdir firstproject
@@ -249,7 +249,7 @@ and replace the `scripts` section with:
 
 to add the Next.js build commands, which we're going to use soon.
 
-> Tip: use `"dev": "next -p 3001",` to change the port and run, in this example, on port 3001
+> Tip: use `"dev": "next -p 3001",` to change the port and run, in this example, on port 3001.
 
 ![](images/Screen%20Shot%202019-11-04%20at%2017.01.03.png)
 
@@ -288,7 +288,7 @@ It's one of the main selling points of Next.js: if we create a site using Next.j
 This has 3 major benefits:
 
 - The client does not need to instantiate React to render, which makes the site faster to your users.
-- Search engines will index the pages without needing to run the client-side JavaScript. Something Google started doing, but openly admitted to be a slower process (and you should help Google as much as possible, if you want to rank well.
+- Search engines will index the pages without needing to run the client-side JavaScript. Something Google started doing, but openly admitted to be a slower process (and you should help Google as much as possible, if you want to rank well).
 - You can have social media meta tags, useful to add preview images, customize title and description for any of your pages shared on Facebook, Twitter and so on.
 
 Let's view the source of the app.
@@ -296,7 +296,7 @@ Using Chrome you can right-click anywhere in the page, and press **View Page Sou
 
 ![](images/Screen%20Shot%202019-11-04%20at%2011.33.10.png)
 
-If you view the source of the page, you'll see the `<div><h1>Home page</h1></div>` snippet in the HTML `body`, along with a bunch of JavaScript files - the app bundles.
+If you view the source of the page, you'll see the `<div><h1>Airbnb clone</h1></div>` snippet in the HTML `body`, along with a bunch of JavaScript files - the app bundles.
 
 We don't need to set up anything, SSR (server-side rendering) is already working for us.
 
@@ -347,7 +347,7 @@ We have 4 JavaScript files being declared to be preloaded in the `head`, using `
 - `/_next/static/runtime/webpack.js` (939 LOC)
 - `/_next/static/runtime/main.js` (12k LOC)
 
-This tells the browser to start loading those files as soon as possible, before the normal rendering flow starts. Without those, scripts would be loaded with an additional delay and this improves the page loading performance.
+This tells the browser to start loading those files as soon as possible, before the normal rendering flow starts. Without those, scripts would be loaded with an additional delay, and this improves the page loading performance.
 
 Then those 4 files are loaded at the end of the `body`, along with `/_next/static/development/dll/dll_01ec57fc9b90d43b98a8.js` (31k LOC), and a JSON snippet that sets some defaults for the page data:
 
@@ -375,7 +375,7 @@ Did you see that little icon at the bottom right of the page, which looks like a
 
 ![](images/Screen%20Shot%202019-11-04%20at%2013.21.42.png)
 
-If you hover it, it's going to say "Prerendered page":
+If you hover it, it's going to say "Prerendered Page":
 
 ![](images/Screen%20Shot%202019-11-04%20at%2013.21.46.png)
 
@@ -1132,7 +1132,7 @@ When mounting the component, Next.js will make sure the tags inside `Head` are a
 
 ## Adding a wrapper component
 
-All the pages on your site look more or less the same. There's a chrome window, a common base layer, and you just want to change what's inside.
+All the pages on your site look more or less the same. There's a chrome, a common base layer, and you just want to change what's inside.
 
 There's a nav bar, a sidebar, and then the actual content.
 
@@ -1249,7 +1249,7 @@ Here's a sample code, which returns to the client the list of comments:
 import comments from './comments.json'
 
 export default (req, res) => {
-  res.status(200).json(comments)
+  res.status(200).json(feeds)
 }
 ```
 
@@ -1305,7 +1305,7 @@ You can make use of any Micro middleware in our API routes to add more functiona
 
 ## Run code only on the server side or client side
 
-In your page components, you can execute code only in the server-side or on the client-side, by checking the `window` property.
+In your page components, you can execute code only in the server-side or on the client-side, but checking the `window` property.
 
 This property is only existing inside the browser, so you can check
 

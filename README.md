@@ -385,7 +385,7 @@ Next can determine this by the absence of the `getInitialProps()` method attache
 
 When this is the case, our page can be even faster because it will be served statically as an HTML file rather than going through the Node.js server that generates the HTML output.
 
-Another useful icon that might appear next to it, or instead of it on non-prerended pages, is a little animated triangle:
+Another useful icon that might appear next to it, or instead of it on non-prerendered pages, is a little animated triangle:
 
 ![](images/Screen%20Shot%202019-11-14%20at%2014.56.21.png)
 
@@ -829,7 +829,7 @@ export default ({ href, children }) => {
 
 We already saw how to use the Link component to declaratively handle routing in Next.js apps.
 
-It's really handy to manage routing in JSX, but sometimes you need to trigger a routing change programatically.
+It's really handy to manage routing in JSX, but sometimes you need to trigger a routing change programmatically.
 
 In this case, you can access the Next.js Router directly, provided in the `next/router` package, and call its `push()` method.
 
@@ -846,7 +846,7 @@ export default () => {
 
 Once we get the router object by invoking `useRouter()`, we can use its methods.
 
-> This is the client side router, so methods should only be used in frontend facing code. The easiest way to ensure this is to wrap calls in the `useEffect()` React hook, or inside `componendDidMount()` in React stateful components.
+> This is the client side router, so methods should only be used in frontend facing code. The easiest way to ensure this is to wrap calls in the `useEffect()` React hook, or inside `componentDidMount()` in React stateful components.
 
 The ones you'll likely use the most are `push()` and `prefetch()`.
 
@@ -1253,7 +1253,7 @@ export default (req, res) => {
 }
 ```
 
-It will listen on the `/api/commments` URL for GET requests, and you can try calling it using your browser:
+It will listen on the `/api/comments` URL for GET requests, and you can try calling it using your browser:
 
 ![](images/Screen%20Shot%202019-11-07%20at%2011.14.42.png)
 

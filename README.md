@@ -1,7 +1,5 @@
 # The Next.js Handbook
 
-> 14 Nov 2019: This is a draft of the book. I am looking for help in proofreading, grammar, typos.. THANK YOU!
-
 ## Index
 
 1. [Introduction](#introduction)

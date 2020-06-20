@@ -778,9 +778,9 @@ This behavior is only being triggered in **production mode** (we'll talk about t
 
 Using the Network inspector in the DevTools you'll notice that any links above the fold, at page load, start the prefetching as soon as the `load` event has been fired on your page (triggered when the page is fully loaded, and happens after the `DOMContentLoaded` event).
 
-Any other `Link` tag not in the viewport will be prefetched when the user scrolls and it
+Any other `Link` tag not in the viewport will be prefetched when the user scrolls past it. 
 
-Prefetching is automatic on high speed connections (Wifi and 3g+ connections, unless the browser sends the [`Save-Data` HTTP Header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Save-Data).
+Prefetching is automatic on high speed connections (Wifi and 3g+ connections, unless the browser sends the [`Save-Data` HTTP Header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Save-Data)).
 
 You can opt out from prefetching individual `Link` instances by setting the `prefetch` prop to `false`:
 
@@ -1267,7 +1267,7 @@ export default (req, res) => {
 }
 ```
 
-Heres you can see the above code in action:
+Here you can see the above code in action:
 
 ![](images/Screen%20Shot%202019-11-07%20at%2011.59.53.png)
 

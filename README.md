@@ -1267,7 +1267,7 @@ export default (req, res) => {
 }
 ```
 
-Heres you can see the above code in action:
+Here you can see the above code in action:
 
 ![](images/Screen%20Shot%202019-11-07%20at%2011.59.53.png)
 
